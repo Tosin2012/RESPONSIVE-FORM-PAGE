@@ -1,0 +1,13 @@
+*{
+    margin:0;
+}
+body{
+    background-image:url(bg-intro-desktop.png);
+    background-color: pink;
+    display:flex;
+    place-items:center;
+    min-height:100vh;
+}
+mai
+
+}
