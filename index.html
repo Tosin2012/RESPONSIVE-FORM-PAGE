@@ -6,44 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESPONSIVE FORM</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <main>
-    <div>
+    <div class="maindiv">
       <h2>Learn to code by watching others</h2>
-      <p>
+      <p class="pcontent">
         See how experienced developers solve problems in real-time. Watching
         scripted tutorials is great, but understanding how developers think is
         invaluable.
       </p>
-      <div>
-        <p>Try it free 7 days then</p>
-        <p>then $20/mo. thereafter</p>
       </div>
       <div>
-        <form>
+      <div class="topdiv">
+        <p class="pcontentdiv"><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+      </div>
+      <form>
+      <div class="formdiv">
+        <div>
           <input
             type="text"
             placeholder="Jonathan |"
             id="fname"
-            name="fname"
-          /><br />
+            name="fname" required /><br />
           <input
             type="text"
             placeholder="Last Name"
             id="lname"
-            name="lname"
-          /><br />
-          <input type="text" placeholder="Email Address" name="email" /><br />
-          <input type="password" placeholder="Password" name="psw" /><br />
-          <button>CLAIM YOUR FREE TRIAL</button>
+            name="lname" required /><br />
+          <input type="text" placeholder="Email Address" name="email" required /><br />
+          <input type="password" placeholder="Password" name="psw" required /><br>
+          <div class="btndiv">
+            <button>CLAIM YOUR FREE TRIAL</button>
+          </div>
         </form>
-        <p>
+        <p class="pfooter">
           By clicking the button you are agreeing to our<a href="#"
             >Terms and Services</a
           >
         </p>
+        </div>
       </div>
-    </div>
 </main>
   </body>
 </html>

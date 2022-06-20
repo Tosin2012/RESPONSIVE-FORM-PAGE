@@ -1,13 +1,105 @@
 *{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 body{
     background-image:url(bg-intro-desktop.png);
-    background-color: pink;
+    background-color: hsl(0, 100%, 74%);
+    font-family:Lexend Deca;
+    color:white;
+    font-weight:400px;
+}
+main{
+    width:50%;
+    margin:auto;
     display:flex;
-    place-items:center;
-    min-height:100vh;
+    justify-items:center;
+    align-items:center;
+    height:100vh;
 }
-mai
-
+.maindiv{
+    width:50%;
+    height:auto;
+    padding:10px
 }
+.pcontent{
+    padding:0 10 10 10px;
+    font-size:10px;
+}
+.topdiv{
+background-color:hsl(248, 32%, 49%);
+border-radius:10%;
+width:350px;
+text-align:center;
+}
+.pcontentdiv{
+    padding:10px;
+    font-size:10px;
+}
+h2, input{
+    margin-bottom:20px
+}
+input[type=text], input[type=password] {
+    width: 310px;
+    padding: 7px;
+    margin: 5px 0 22px 0;
+    display:inline-block;
+    border-radius:8%;
+    border-block-start-color: lightgrey;
+    opacity:0.9;
+}
+button{
+    margin:0 10 10 10px;
+    padding:10px;
+    background-color:hsl(154, 59%, 51%);
+    font-size:10px;
+    color:white;
+    width:310px;
+    border-radius:8%;
+    text-align:center;
+    opacity:0.9;
+    border:none
+}
+input,button:hover{
+    opacity:0.5;
+}
+.pfooter{
+    color:hsl(246, 25%, 77%);
+    padding:0 10 10 10px;
+    font-size:8px;
+    text-align:center;
+    margin-top:10px
+}
+a{
+    color:red
+}
+form{
+    padding:10px 20px 20px 0;
+    -height:400px    
+}
+.formdiv{
+    background-color:white;
+    border-radius:5%;
+    padding:15px;
+    height:50vh;
+    width:350px
+}
+@media screen and (max-width:375px){
+    main{
+        flex-direction:column;
+    }
+    .maindiv, button{
+        width:auto;
+        text-align:center
+    }
+    .formdiv, .pcontent, .pcontentdiv{
+        width:auto;
+        text-align:center;
+        padding:auto;
+    }
+    .topdiv, input[type=text], input[type=password]{
+        width:auto;
+        padding:5px
+    }
+    }
